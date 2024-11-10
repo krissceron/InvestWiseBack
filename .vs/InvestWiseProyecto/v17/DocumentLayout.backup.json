@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\usuarioconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\usuarioconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\loginusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,8 +114,7 @@
               "RelativeToolTip": "Controllers\\RolController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T20:05:19.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T20:05:19.642Z"
             },
             {
               "$type": "Document",
@@ -143,13 +142,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UsuarioConection.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\UsuarioConection.cs",
               "RelativeDocumentMoniker": "DataConnection\\UsuarioConection.cs",
               "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\UsuarioConection.cs",
               "RelativeToolTip": "DataConnection\\UsuarioConection.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAAAswOwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAswBEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T02:42:18.041Z",
               "EditorCaption": ""
@@ -180,13 +179,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAswCcAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAswEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T16:11:34.276Z",
               "EditorCaption": ""
@@ -213,8 +212,7 @@
               "RelativeToolTip": "Model\\LoginUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T14:58:53.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T14:58:53.616Z"
             },
             {
               "$type": "Document",

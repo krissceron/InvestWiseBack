@@ -40,6 +40,16 @@ namespace InvestWiseProyecto.Controllers
             return res;
         }
 
+        [HttpGet]
+        [Route("ObtenerPorId/{idUsuario}")]
+        public Respuesta ObtenerUsuarioPorId(int idUsuario)
+        {
+            UsuarioConection dbConexion = new UsuarioConection();
+            Respuesta res = dbConexion.ObtenerUsuarioPorId(idUsuario);
+            return res;
+        }
+
+
         [HttpPut]
         [Route("Editar")]
         public Respuesta ActualizarUsuario([FromBody] UsuarioModificado usuarioModi)

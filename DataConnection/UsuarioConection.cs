@@ -94,6 +94,51 @@ namespace InvestWiseProyecto.Data
             return respuesta;
         }
 
+        //obtener por id
+
+        public Respuesta ObtenerUsuarioPorId(int idUsuario)
+        {
+            int resultado;
+            Respuesta respuesta = new Respuesta();
+
+            using (SqlConnection connection = new SqlConnection(cadena))
+            {
+                using (SqlCommand command = new SqlCommand("sp_ObtenerUsuarioPorId", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Agregar parámetro de entrada
+                    command.Parameters.Add(new SqlParameter("@idUsuario", SqlDbType.Int)).Value = idUsuario;
+
+                    // Agregar parámetro de salida
+                    SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    command.Parameters.Add(outputParameter);
+
+                    // Abrir conexión
+                    connection.Open();
+
+                    // Llenar DataTable con los datos obtenidos
+                    DataTable dataTable = new DataTable();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+
+                    // Obtener el valor del parámetro de salida
+                    resultado = (int)outputParameter.Value;
+                    respuesta.codigo = resultado;
+
+                    // Convertir DataTable a lista de diccionarios y asignarlo a selectResultado
+                    respuesta.selectResultado = ConvertDataTableToList(dataTable);
+                }
+            }
+
+            return respuesta;
+        }
+
 
         // Método para actualizar usuario
         public Respuesta ActualizarUsuario(UsuarioModificado usuarioModi)
