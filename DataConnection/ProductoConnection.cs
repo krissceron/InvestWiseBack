@@ -90,6 +90,51 @@ namespace InvestWiseProyecto.DataConnection
 
             return respuesta;
         }
+        //OBTENER POR ID
+        // OBTENER PRODUCTO POR ID
+        public Respuesta ObtenerProductoPorId(int idProducto)
+        {
+            int resultado;
+            Respuesta respuesta = new Respuesta();
+
+            using (SqlConnection connection = new SqlConnection(cadena))
+            {
+                using (SqlCommand command = new SqlCommand("sp_ObtenerProductoPorId", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Agregar parámetro de entrada
+                    command.Parameters.Add(new SqlParameter("@idProducto", SqlDbType.Int)).Value = idProducto;
+
+                    // Agregar parámetro de salida
+                    SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    command.Parameters.Add(outputParameter);
+
+                    // Abrir conexión y ejecutar el procedimiento
+                    connection.Open();
+
+                    // Llenar DataTable con los datos obtenidos
+                    DataTable dataTable = new DataTable();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+
+                    // Obtener el valor del parámetro de salida
+                    resultado = (int)outputParameter.Value;
+                    respuesta.codigo = resultado;
+
+                    // Convertir DataTable a lista de diccionarios y asignarlo a selectResultado
+                    respuesta.selectResultado = ConvertDataTableToList(dataTable);
+                }
+            }
+
+            return respuesta;
+        }
+
 
         //ACTUALIZAR PRODUCTO
         public Respuesta ActualizarProducto(ProductoModificado productoModi)

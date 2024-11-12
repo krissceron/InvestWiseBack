@@ -2,11 +2,16 @@
 {
     public class Propuesta
     {
-        public int idProducto {  get; set; }
-        public int idEstadoPropuesta { get; set; }
+        public int idProducto { get; set; }
         public int numInversionistasPropuesta { get; set; }
-        public int presupuestoGastoPropuesta { get; set; }
-        public DateTime fechaFinPropuesta { get; set; }
-        public int estaAprobado { get; set; }
+
+        private float _presupuestoGastoPropuesta;
+        public float presupuestoGastoPropuesta
+        {
+            get => (float)Math.Round(_presupuestoGastoPropuesta, 2); // Limitar a 2 decimales
+            set => _presupuestoGastoPropuesta = (float)Math.Round(value, 2);
+        }
+
+        public string fechaInicioPropuesta { get; set; }
     }
 }

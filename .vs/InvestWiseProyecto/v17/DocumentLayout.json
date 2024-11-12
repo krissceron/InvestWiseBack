@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\propuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\propuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\propuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\propuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\propuestaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\propuestaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\usuarioconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\usuarioconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\loginusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\loginusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\productoconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\productoconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\respuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\respuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\estadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\estadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\estadoconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\estadoconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\estadopropuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\estadopropuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,56 +63,40 @@
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\rolconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\propuestaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\propuestaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\propuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\propuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\propuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\propuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\categoriaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\categoriaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\productomodificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\productomodificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\productoconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\productoconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\propuestamodificada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\propuestamodificada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\connection\\cadenaconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:connection\\cadenaconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\respuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\respuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\categoriaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\categoriaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\loginusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\loginusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\connection\\cadenaconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:connection\\cadenaconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\usuariomodificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,213 +130,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RolController.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\RolController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RolController.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\RolController.cs",
-              "RelativeToolTip": "Controllers\\RolController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T20:05:19.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RolConnection.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\RolConnection.cs",
-              "RelativeDocumentMoniker": "DataConnection\\RolConnection.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\RolConnection.cs",
-              "RelativeToolTip": "DataConnection\\RolConnection.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAgwEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T20:03:31.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Rol.cs",
-              "RelativeDocumentMoniker": "Model\\Rol.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Rol.cs",
-              "RelativeToolTip": "Model\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T20:02:49.352Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioConection.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\UsuarioConection.cs",
-              "RelativeDocumentMoniker": "DataConnection\\UsuarioConection.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\UsuarioConection.cs",
-              "RelativeToolTip": "DataConnection\\UsuarioConection.cs",
-              "ViewState": "AgIAAP8AAAAAAAAAAAAswBkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T02:42:18.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PropuestaConnection.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\PropuestaConnection.cs",
-              "RelativeDocumentMoniker": "DataConnection\\PropuestaConnection.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\PropuestaConnection.cs",
-              "RelativeToolTip": "DataConnection\\PropuestaConnection.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T07:04:54.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PropuestaController.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\PropuestaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PropuestaController.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\PropuestaController.cs",
-              "RelativeToolTip": "Controllers\\PropuestaController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:10:15.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAEIAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEIAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:11:34.276Z",
+              "WhenOpened": "2024-11-10T16:11:34.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EstadoController.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\EstadoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstadoController.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\EstadoController.cs",
+              "RelativeToolTip": "Controllers\\EstadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T02:45:38.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PropuestaController.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\PropuestaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PropuestaController.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\PropuestaController.cs",
+              "RelativeToolTip": "Controllers\\PropuestaController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T16:10:15.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Usuario.cs",
-              "RelativeDocumentMoniker": "Model\\Usuario.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Usuario.cs",
-              "RelativeToolTip": "Model\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T02:53:46.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\LoginUsuario.cs",
-              "RelativeDocumentMoniker": "Model\\LoginUsuario.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\LoginUsuario.cs",
-              "RelativeToolTip": "Model\\LoginUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T14:58:53.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Propuesta.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Propuesta.cs",
-              "RelativeDocumentMoniker": "Model\\Propuesta.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Propuesta.cs",
-              "RelativeToolTip": "Model\\Propuesta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T07:02:35.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T15:29:17.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductoModificado.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\ProductoModificado.cs",
-              "RelativeDocumentMoniker": "Model\\ProductoModificado.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\ProductoModificado.cs",
-              "RelativeToolTip": "Model\\ProductoModificado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T06:38:04.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:08:45.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Producto.cs",
-              "RelativeDocumentMoniker": "Model\\Producto.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Producto.cs",
-              "RelativeToolTip": "Model\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T06:09:06.597Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductoConnection.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\ProductoConnection.cs",
-              "RelativeDocumentMoniker": "DataConnection\\ProductoConnection.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\ProductoConnection.cs",
-              "RelativeToolTip": "DataConnection\\ProductoConnection.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAAAJEAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T06:08:18.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PropuestaModificada.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\PropuestaModificada.cs",
-              "RelativeDocumentMoniker": "Model\\PropuestaModificada.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\PropuestaModificada.cs",
-              "RelativeToolTip": "Model\\PropuestaModificada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T07:02:50.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CadenaConexion.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Connection\\CadenaConexion.cs",
-              "RelativeDocumentMoniker": "Connection\\CadenaConexion.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Connection\\CadenaConexion.cs",
-              "RelativeToolTip": "Connection\\CadenaConexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T03:13:29.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "Respuesta.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Respuesta.cs",
               "RelativeDocumentMoniker": "Model\\Respuesta.cs",
@@ -324,7 +179,249 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Propuesta.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Propuesta.cs",
+              "RelativeDocumentMoniker": "Model\\Propuesta.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Propuesta.cs",
+              "RelativeToolTip": "Model\\Propuesta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T07:02:35.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioConection.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\UsuarioConection.cs",
+              "RelativeDocumentMoniker": "DataConnection\\UsuarioConection.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\UsuarioConection.cs",
+              "RelativeToolTip": "DataConnection\\UsuarioConection.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T02:42:18.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PropuestaConnection.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\PropuestaConnection.cs",
+              "RelativeDocumentMoniker": "DataConnection\\PropuestaConnection.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\PropuestaConnection.cs",
+              "RelativeToolTip": "DataConnection\\PropuestaConnection.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAswO4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T07:04:54.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Usuario.cs",
+              "RelativeDocumentMoniker": "Model\\Usuario.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Usuario.cs",
+              "RelativeToolTip": "Model\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T02:53:46.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductoConnection.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\ProductoConnection.cs",
+              "RelativeDocumentMoniker": "DataConnection\\ProductoConnection.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\ProductoConnection.cs",
+              "RelativeToolTip": "DataConnection\\ProductoConnection.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAswOYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T06:08:18.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EstadoConnection.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\EstadoConnection.cs",
+              "RelativeDocumentMoniker": "DataConnection\\EstadoConnection.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\EstadoConnection.cs",
+              "RelativeToolTip": "DataConnection\\EstadoConnection.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T02:44:18.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Controllers\\ProductoController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T16:08:45.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Producto.cs",
+              "RelativeDocumentMoniker": "Model\\Producto.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Producto.cs",
+              "RelativeToolTip": "Model\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T06:09:06.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EstadoPropuesta.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\EstadoPropuesta.cs",
+              "RelativeDocumentMoniker": "Model\\EstadoPropuesta.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\EstadoPropuesta.cs",
+              "RelativeToolTip": "Model\\EstadoPropuesta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T02:42:54.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RolConnection.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\RolConnection.cs",
+              "RelativeDocumentMoniker": "DataConnection\\RolConnection.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\RolConnection.cs",
+              "RelativeToolTip": "DataConnection\\RolConnection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:03:31.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RolController.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\RolController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolController.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\RolController.cs",
+              "RelativeToolTip": "Controllers\\RolController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:05:19.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoriaProducto.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\CategoriaProducto.cs",
+              "RelativeDocumentMoniker": "Model\\CategoriaProducto.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\CategoriaProducto.cs",
+              "RelativeToolTip": "Model\\CategoriaProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T01:23:30.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PropuestaModificada.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\PropuestaModificada.cs",
+              "RelativeDocumentMoniker": "Model\\PropuestaModificada.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\PropuestaModificada.cs",
+              "RelativeToolTip": "Model\\PropuestaModificada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T07:02:50.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\LoginUsuario.cs",
+              "RelativeDocumentMoniker": "Model\\LoginUsuario.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\LoginUsuario.cs",
+              "RelativeToolTip": "Model\\LoginUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T14:58:53.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductoModificado.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\ProductoModificado.cs",
+              "RelativeDocumentMoniker": "Model\\ProductoModificado.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\ProductoModificado.cs",
+              "RelativeToolTip": "Model\\ProductoModificado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T06:38:04.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoriaConnection.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\CategoriaConnection.cs",
+              "RelativeDocumentMoniker": "DataConnection\\CategoriaConnection.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\CategoriaConnection.cs",
+              "RelativeToolTip": "DataConnection\\CategoriaConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T01:27:33.726Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 18,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T01:28:44.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Rol.cs",
+              "RelativeDocumentMoniker": "Model\\Rol.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Rol.cs",
+              "RelativeToolTip": "Model\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:02:49.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:29:17.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CadenaConexion.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Connection\\CadenaConexion.cs",
+              "RelativeDocumentMoniker": "Connection\\CadenaConexion.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Connection\\CadenaConexion.cs",
+              "RelativeToolTip": "Connection\\CadenaConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T03:13:29.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "UsuarioModificado.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\UsuarioModificado.cs",
               "RelativeDocumentMoniker": "Model\\UsuarioModificado.cs",

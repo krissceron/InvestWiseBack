@@ -31,6 +31,16 @@ namespace InvestWiseProyecto.Controllers
             return res;
         }
 
+        [HttpGet]
+        [Route("ObtenerPorId/{idPropuesta}")]
+        public Respuesta ObtenerPropuestaPorId(int idPropuesta)
+        {
+            PropuestaConnection dbConexion = new PropuestaConnection();
+            Respuesta res = dbConexion.ObtenerPropuestaPorId(idPropuesta);
+            return res;
+        }
+
+
         [HttpPut]
         [Route("Editar")]
         public Respuesta ActualizarPropuesta([FromBody] PropuestaModificada propuestaModi)

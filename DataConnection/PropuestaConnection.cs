@@ -23,11 +23,9 @@ namespace InvestWiseProyecto.DataConnection
 
                     // Agregar parámetros de entrada
                     command.Parameters.Add(new SqlParameter("@idProducto", SqlDbType.Int)).Value = propuesta.idProducto;
-                    command.Parameters.Add(new SqlParameter("@idEstadoPropuesta", SqlDbType.Int)).Value = propuesta.idEstadoPropuesta;
                     command.Parameters.Add(new SqlParameter("@numInversionistasPropuesta", SqlDbType.Int)).Value = propuesta.numInversionistasPropuesta;
-                    command.Parameters.Add(new SqlParameter("@presupuestoGastoPropuesta", SqlDbType.Float)).Value = propuesta.presupuestoGastoPropuesta;
-                    command.Parameters.Add(new SqlParameter("@fechaFinPropuesta", SqlDbType.DateTime)).Value = propuesta.fechaFinPropuesta;
-                    command.Parameters.Add(new SqlParameter("@estaAprobado", SqlDbType.Bit)).Value = propuesta.estaAprobado;
+                    command.Parameters.Add(new SqlParameter("@presupuestoGastoPropuesta", SqlDbType.Float,5)).Value = propuesta.presupuestoGastoPropuesta;
+                    command.Parameters.Add(new SqlParameter("@fechaInicioPropuesta", SqlDbType.VarChar,8)).Value = propuesta.fechaInicioPropuesta;
                    
                     // Agregar parámetro de salida
                     SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
@@ -92,6 +90,51 @@ namespace InvestWiseProyecto.DataConnection
 
             return respuesta;
         }
+
+        //OBTENER POR ID
+        public Respuesta ObtenerPropuestaPorId(int idPropuesta)
+        {
+            int resultado;
+            Respuesta respuesta = new Respuesta();
+
+            using (SqlConnection connection = new SqlConnection(cadena))
+            {
+                using (SqlCommand command = new SqlCommand("sp_ObtenerPropuestaPorId", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Agregar parámetro de entrada
+                    command.Parameters.Add(new SqlParameter("@idPropuesta", SqlDbType.Int)).Value = idPropuesta;
+
+                    // Agregar parámetro de salida
+                    SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    command.Parameters.Add(outputParameter);
+
+                    // Abrir conexión y ejecutar el procedimiento
+                    connection.Open();
+
+                    // Llenar DataTable con los datos obtenidos
+                    DataTable dataTable = new DataTable();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+
+                    // Obtener el valor del parámetro de salida
+                    resultado = (int)outputParameter.Value;
+                    respuesta.codigo = resultado;
+
+                    // Convertir DataTable a lista de diccionarios y asignarlo a selectResultado
+                    respuesta.selectResultado = ConvertDataTableToList(dataTable);
+                }
+            }
+
+            return respuesta;
+        }
+
 
 
         // Método para actualizar usuario

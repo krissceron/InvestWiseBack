@@ -28,6 +28,16 @@ namespace InvestWiseProyecto.Controllers
             return res;
         }
 
+        [HttpGet]
+        [Route("ObtenerPorId/{idProducto}")]
+        public Respuesta ObtenerProductoPorId(int idProducto)
+        {
+            ProductoConnection dbConexion = new ProductoConnection();
+            Respuesta res = dbConexion.ObtenerProductoPorId(idProducto);
+            return res;
+        }
+
+
         [HttpPut]
         [Route("Editar")]
         public Respuesta ActualizarProducto([FromBody] ProductoModificado productoModi)
