@@ -6,6 +6,7 @@
         public int numInversionistasPropuesta { get; set; }
 
         private float _presupuestoGastoPropuesta;
+        public int idEstadoPropuesta { get; set; }
         public float presupuestoGastoPropuesta
         {
             get => (float)Math.Round(_presupuestoGastoPropuesta, 2); // Limitar a 2 decimales
