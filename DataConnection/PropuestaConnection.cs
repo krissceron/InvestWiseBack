@@ -25,10 +25,10 @@ namespace InvestWiseProyecto.DataConnection
                     command.Parameters.Add(new SqlParameter("@idProducto", SqlDbType.Int)).Value = propuesta.idProducto;
                     command.Parameters.Add(new SqlParameter("@numInversionistasPropuesta", SqlDbType.Int)).Value = propuesta.numInversionistasPropuesta;
                     command.Parameters.Add(new SqlParameter("@presupuestoGastoPropuesta", SqlDbType.Float,5)).Value = propuesta.presupuestoGastoPropuesta;
-                    command.Parameters.Add(new SqlParameter("@valorTotalPropuesta", SqlDbType.Float,5)).Value = propuesta.valorTotalPropuesta;
+                    //command.Parameters.Add(new SqlParameter("@valorTotalPropuesta", SqlDbType.Float,5)).Value = propuesta.valorTotalPropuesta;
                     command.Parameters.Add(new SqlParameter("@precioVentaPropuesta", SqlDbType.Float,5)).Value = propuesta.precioVentaPropuesta;
                     command.Parameters.Add(new SqlParameter("@fechaInicioPropuesta", SqlDbType.VarChar,8)).Value = propuesta.fechaInicioPropuesta;
-                    command.Parameters.Add(new SqlParameter("@gananciaPropuesta", SqlDbType.Float,5)).Value = propuesta.gananciaPropuesta;
+                    //command.Parameters.Add(new SqlParameter("@gananciaPropuesta", SqlDbType.Float,5)).Value = propuesta.gananciaPropuesta;
                    
                     // Agregar parámetro de salida
                     SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
@@ -248,16 +248,22 @@ namespace InvestWiseProyecto.DataConnection
                 using (SqlCommand command = new SqlCommand("sp_ActualizarPropuesta", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
+                    command.CommandType = CommandType.StoredProcedure;
+                    DateTime fechaInicioPropuestaDateTime = DateTime.ParseExact(
+                        propuestaModi.fechaInicioPropuesta,
+                        "yyyyMMdd",
+                        System.Globalization.CultureInfo.InvariantCulture
+                    );
 
                     // Agregar parámetros de entrada
+                    command.Parameters.Add(new SqlParameter("@idPropuesta", SqlDbType.Int)).Value = propuestaModi.idPropuesta;
                     command.Parameters.Add(new SqlParameter("@idProducto", SqlDbType.Int)).Value = propuestaModi.idProducto;
                     //command.Parameters.Add(new SqlParameter("@idEstadoPropuesta", SqlDbType.Int)).Value = propuestaModi.idEstadoPropuesta;
                     command.Parameters.Add(new SqlParameter("@numInversionistasPropuesta", SqlDbType.Int)).Value = propuestaModi.numInversionistasPropuesta;
                     command.Parameters.Add(new SqlParameter("@presupuestoGastoPropuesta", SqlDbType.Float)).Value = propuestaModi.presupuestoGastoPropuesta;
-                    command.Parameters.Add(new SqlParameter("@valorTotalPropuesta", SqlDbType.Float, 5)).Value = propuestaModi.valorTotalPropuesta;
+                    //command.Parameters.Add(new SqlParameter("@valorTotalPropuesta", SqlDbType.Float, 5)).Value = propuestaModi.valorTotalPropuesta;
                     command.Parameters.Add(new SqlParameter("@precioVentaPropuesta", SqlDbType.Float, 5)).Value = propuestaModi.precioVentaPropuesta;
-                    command.Parameters.Add(new SqlParameter("@fechaInicioPropuesta", SqlDbType.VarChar, 8)).Value = propuestaModi.fechaInicioPropuesta;
-                    command.Parameters.Add(new SqlParameter("@gananciaPropuesta", SqlDbType.Float, 5)).Value = propuestaModi.gananciaPropuesta;
+                    command.Parameters.Add(new SqlParameter("@fechaInicioPropuesta", SqlDbType.VarChar, 8)).Value = fechaInicioPropuestaDateTime;
                     // Agregar parámetro de salida
                     SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
                     {

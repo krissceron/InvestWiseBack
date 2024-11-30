@@ -69,6 +69,12 @@ namespace InvestWiseProyecto.Service
 
                     // Calcular porcentaje de ganancia final
                     float porcentajeGananciaFinal = (ingresoPorUsuario / up.MontoInversion) * 100;
+                    // Generar mensaje de cumplimiento de objetivo
+                    string mensajeResultado = porcentajeGananciaFinal > usuarioFiltrado.ObjPorcPropUsuario
+                        ? "Superó su objetivo. Felicidades"
+                        : porcentajeGananciaFinal < usuarioFiltrado.ObjPorcPropUsuario
+                            ? "No alcanzó su objetivo"
+                            : "Alcanzó su objetivo. Felicidades";
 
                     // Convertir fechas
                     var fechaInicio = ConvertirFechaYYYYMMDD(propuesta.FechaInicioPropuesta);
@@ -104,6 +110,7 @@ namespace InvestWiseProyecto.Service
                         IngresoPropuestaPorUsuario = ingresoPorUsuario,
                         PorcentajeGananciaFinal = porcentajeGananciaFinal,
                         ObjPorcGananciaIndiv = usuarioFiltrado.ObjPorcPropUsuario,
+                        MensajeResultado = mensajeResultado,
                         RotacionDias = rotacionDias,
                         RentabilidadPorDia = rentabilidadPorDia,
                         AnalisisRentabilidad = analisisRentabilidad

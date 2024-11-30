@@ -9,10 +9,8 @@ namespace InvestWiseProyecto.Model
         //public int idEstadoPropuesta { get; set; }
         public int numInversionistasPropuesta { get; set; }
         public float presupuestoGastoPropuesta { get; set; }
-        public float valorTotalPropuesta { get; set; }
         public float precioVentaPropuesta { get; set; }
         public string fechaInicioPropuesta { get; set; }
         //public int estaAprobado { get; set; }
-        public float gananciaPropuesta { get; set; }
     }
 }
