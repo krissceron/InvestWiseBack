@@ -19,6 +19,8 @@ namespace InvestWiseProyecto.Controllers
         }
 
 
+
+
         [HttpPost]
         [Route("Crear")]
         public Respuesta CrearUsuario([FromBody] Usuario usuario)

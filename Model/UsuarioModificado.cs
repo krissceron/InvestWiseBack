@@ -10,5 +10,9 @@
         public string cedulaUsuario { get; set; }
         public string telefonoUsuario { get; set; }
         public string correoUsuario { get; set; }
+        public string generoUsuario { get; set; }
+        public string fechaNacimientoUsuario { get; set; }
+        public float objPorcPropUsuario { get; set; }
+        public float objGanMesUsuario { get; set; }
     }
 }

@@ -40,6 +40,25 @@ namespace InvestWiseProyecto.Controllers
             return res;
         }
 
+        [HttpGet]
+        [Route("ObtenerUsuariosPorPropuesta/{idPropuesta}")]
+        public IActionResult ObtenerUsuariosPorPropuesta(int idPropuesta)
+        {
+            PropuestaConnection dbConexion = new PropuestaConnection();
+            Respuesta respuesta = dbConexion.ObtenerUsuariosPorPropuesta(idPropuesta);
+            return Ok(respuesta); // Devuelve el resultado en formato JSON
+        }
+
+
+        [HttpPost]
+        [Route("AceptarPropuesta")]
+        public IActionResult AceptarPropuesta([FromBody] AceptarPropuesta usuarioPropuesta)
+        {
+            PropuestaConnection dbConexion = new PropuestaConnection();
+            Respuesta respuesta = dbConexion.AceptarPropuesta(usuarioPropuesta);
+            return Ok(respuesta); // Devuelve el resultado en formato JSON
+        }
+
 
         [HttpPut]
         [Route("Editar")]
@@ -57,6 +76,15 @@ namespace InvestWiseProyecto.Controllers
             PropuestaConnection dbConexion = new PropuestaConnection();
             Respuesta res = dbConexion.EliminarPropuesta(idPropuesta);
             return res;
+        }
+
+        [HttpPost]
+        [Route("SalirPropuesta")]
+        public IActionResult SalirPropuesta([FromBody] AceptarPropuesta usuarioPropuesta)
+        {
+            PropuestaConnection dbConexion = new PropuestaConnection();
+            Respuesta respuesta = dbConexion.SalirPropuesta(usuarioPropuesta);
+            return Ok(respuesta); // Devuelve el resultado en formato JSON
         }
 
 

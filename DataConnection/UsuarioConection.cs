@@ -20,6 +20,11 @@ namespace InvestWiseProyecto.Data
                 using (SqlCommand command = new SqlCommand("sp_InsertarUsuario", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
+                    DateTime fechaNacimientoDateTime = DateTime.ParseExact(
+                        usuario.fechaNacimientoUsuario,
+                        "yyyyMMdd",
+                        System.Globalization.CultureInfo.InvariantCulture
+                    );
 
                     // Agregar parámetros de entrada
                     command.Parameters.Add(new SqlParameter("@idRol", SqlDbType.Int)).Value = usuario.idRol;
@@ -29,6 +34,10 @@ namespace InvestWiseProyecto.Data
                     command.Parameters.Add(new SqlParameter("@cedulaUsuario", SqlDbType.VarChar, 50)).Value = usuario.cedulaUsuario;
                     command.Parameters.Add(new SqlParameter("@telefonoUsuario", SqlDbType.VarChar, 50)).Value = usuario.telefonoUsuario;
                     command.Parameters.Add(new SqlParameter("@correoUsuario", SqlDbType.VarChar, 100)).Value = usuario.correoUsuario;
+                    command.Parameters.Add(new SqlParameter("@generoUsuario", SqlDbType.VarChar, 30)).Value = usuario.generoUsuario;
+                    command.Parameters.Add(new SqlParameter("@fechaNacimientoUsuario", SqlDbType.DateTime)).Value = fechaNacimientoDateTime;
+                    command.Parameters.Add(new SqlParameter("@objPorcPropUsuario", SqlDbType.Float,5)).Value = usuario.objPorcPropUsuario;
+                    command.Parameters.Add(new SqlParameter("@objGanMesUsuario", SqlDbType.Float,5)).Value = usuario.objGanMesUsuario;
 
                     // Agregar parámetro de salida
                     SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
@@ -151,7 +160,12 @@ namespace InvestWiseProyecto.Data
                 using (SqlCommand command = new SqlCommand("sp_ActualizarUsuario", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-
+                    command.CommandType = CommandType.StoredProcedure;
+                    DateTime fechaNacimientoDateTime = DateTime.ParseExact(
+                        usuarioModi.fechaNacimientoUsuario,
+                        "yyyyMMdd",
+                        System.Globalization.CultureInfo.InvariantCulture
+                    );
                     // Agregar parámetros de entrada
                     command.Parameters.Add(new SqlParameter("@idUsuario", SqlDbType.Int)).Value = usuarioModi.idUsuario;
                     command.Parameters.Add(new SqlParameter("@idRol", SqlDbType.Int)).Value = usuarioModi.idRol;
@@ -161,6 +175,10 @@ namespace InvestWiseProyecto.Data
                     command.Parameters.Add(new SqlParameter("@cedulaUsuario", SqlDbType.VarChar, 50)).Value = usuarioModi.cedulaUsuario;
                     command.Parameters.Add(new SqlParameter("@telefonoUsuario", SqlDbType.VarChar, 50)).Value = usuarioModi.telefonoUsuario;
                     command.Parameters.Add(new SqlParameter("@correoUsuario", SqlDbType.VarChar, 100)).Value = usuarioModi.correoUsuario;
+                    command.Parameters.Add(new SqlParameter("@generoUsuario", SqlDbType.VarChar, 30)).Value = usuarioModi.generoUsuario;
+                    command.Parameters.Add(new SqlParameter("@fechaNacimientoUsuario", SqlDbType.DateTime)).Value = fechaNacimientoDateTime;
+                    command.Parameters.Add(new SqlParameter("@objPorcPropUsuario", SqlDbType.Float)).Value = usuarioModi.objPorcPropUsuario;
+                    command.Parameters.Add(new SqlParameter("@objGanMesUsuario", SqlDbType.Float)).Value = usuarioModi.objGanMesUsuario;
 
                     // Agregar parámetro de salida
                     SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
@@ -222,38 +240,53 @@ namespace InvestWiseProyecto.Data
         // Método para el login de usuario
         public Respuesta LoginUsuario(LoginUsuario loginUsuario)
         {
-            int resultado;
             Respuesta respuesta = new Respuesta();
-
             using (SqlConnection connection = new SqlConnection(cadena))
             {
                 using (SqlCommand command = new SqlCommand("sp_LoginUsuario", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
 
-                    // Agregar parámetros de entrada
+                    // Parámetros de entrada
                     command.Parameters.Add(new SqlParameter("@nombreUsuario", SqlDbType.VarChar, 50)).Value = loginUsuario.nombreUsuario;
                     command.Parameters.Add(new SqlParameter("@contraseniaUsuario", SqlDbType.VarChar, 50)).Value = loginUsuario.contraseniaUsuario;
 
-                    // Agregar parámetro de salida
-                    SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
-                    {
-                        Direction = ParameterDirection.Output
-                    };
-                    command.Parameters.Add(outputParameter);
+                    // Parámetros de salida
+                    SqlParameter outputResultado = new SqlParameter("@resultado", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                    SqlParameter outputRolUsuario = new SqlParameter("@rolUsuario", SqlDbType.VarChar, 50) { Direction = ParameterDirection.Output };
+                    SqlParameter outputIdUsuario = new SqlParameter("@idUsuario", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                    command.Parameters.Add(outputResultado);
+                    command.Parameters.Add(outputRolUsuario);
+                    command.Parameters.Add(outputIdUsuario);
 
-                    // Abrir conexión y ejecutar el procedimiento
+                    // Ejecutar el procedimiento
                     connection.Open();
                     command.ExecuteNonQuery();
 
-                    // Obtener el valor del parámetro de salida
-                    resultado = (int)outputParameter.Value;
-                    respuesta.codigo = resultado;
+                    // Configurar la respuesta
+                    respuesta.codigo = (int)outputResultado.Value;
+                    if (respuesta.codigo == 1)
+                    {
+                        respuesta.mensaje = "Inicio de sesión exitoso";
+                        respuesta.selectResultado = new
+                        {
+                            rolUsuario = outputRolUsuario.Value?.ToString(),
+                            idUsuario = (int)outputIdUsuario.Value
+                        };
+                    }
+                    else if (respuesta.codigo == 0)
+                    {
+                        respuesta.mensaje = "Credenciales incorrectas";
+                    }
+                    else
+                    {
+                        respuesta.mensaje = "Error en el servidor";
+                    }
                 }
             }
-
             return respuesta;
         }
+
 
 
         //Convertimos la tabla

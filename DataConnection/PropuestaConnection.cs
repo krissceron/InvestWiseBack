@@ -25,7 +25,10 @@ namespace InvestWiseProyecto.DataConnection
                     command.Parameters.Add(new SqlParameter("@idProducto", SqlDbType.Int)).Value = propuesta.idProducto;
                     command.Parameters.Add(new SqlParameter("@numInversionistasPropuesta", SqlDbType.Int)).Value = propuesta.numInversionistasPropuesta;
                     command.Parameters.Add(new SqlParameter("@presupuestoGastoPropuesta", SqlDbType.Float,5)).Value = propuesta.presupuestoGastoPropuesta;
+                    command.Parameters.Add(new SqlParameter("@valorTotalPropuesta", SqlDbType.Float,5)).Value = propuesta.valorTotalPropuesta;
+                    command.Parameters.Add(new SqlParameter("@precioVentaPropuesta", SqlDbType.Float,5)).Value = propuesta.precioVentaPropuesta;
                     command.Parameters.Add(new SqlParameter("@fechaInicioPropuesta", SqlDbType.VarChar,8)).Value = propuesta.fechaInicioPropuesta;
+                    command.Parameters.Add(new SqlParameter("@gananciaPropuesta", SqlDbType.Float,5)).Value = propuesta.gananciaPropuesta;
                    
                     // Agregar parámetro de salida
                     SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
@@ -135,6 +138,103 @@ namespace InvestWiseProyecto.DataConnection
             return respuesta;
         }
 
+        public Respuesta ObtenerUsuariosPorPropuesta(int idPropuesta)
+        {
+            Respuesta respuesta = new Respuesta();
+            using (SqlConnection connection = new SqlConnection(cadena))
+            {
+                using (SqlCommand command = new SqlCommand("sp_ObtenerUsuariosPorPropuesta", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Parámetro de entrada
+                    command.Parameters.Add(new SqlParameter("@idPropuesta", idPropuesta));
+
+                    // Parámetro de salida
+                    SqlParameter outputResultado = new SqlParameter("@resultado", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    command.Parameters.Add(outputResultado);
+
+                    // Ejecutar el procedimiento
+                    connection.Open();
+                    DataTable dataTable = new DataTable();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+
+                    // Obtener el valor del parámetro de salida
+                    int resultado = (int)outputResultado.Value;
+                    respuesta.codigo = resultado;
+
+                    if (resultado == 1)
+                    {
+                        respuesta.selectResultado = ConvertDataTableToList(dataTable);
+                    }
+                    else
+                    {
+                        respuesta.mensaje = "Error al obtener usuarios por propuesta.";
+                    }
+                }
+            }
+            return respuesta;
+        }
+
+        public Respuesta AceptarPropuesta(AceptarPropuesta usuarioPropuesta)
+        {
+            Respuesta respuesta = new Respuesta();
+
+            using (SqlConnection connection = new SqlConnection(cadena))
+            {
+                using (SqlCommand command = new SqlCommand("sp_AceptarPropuesta", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Parámetros de entrada
+                    command.Parameters.Add(new SqlParameter("@idUsuario", usuarioPropuesta.IdUsuario));
+                    command.Parameters.Add(new SqlParameter("@idPropuesta", usuarioPropuesta.IdPropuesta));
+
+                    // Parámetro de salida
+                    SqlParameter outputResultado = new SqlParameter("@resultado", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    command.Parameters.Add(outputResultado);
+
+                    // Ejecutar el procedimiento
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    // Obtener el valor del parámetro de salida
+                    int resultado = (int)outputResultado.Value;
+                    respuesta.codigo = resultado;
+
+                    if (resultado == 1)
+                    {
+                        respuesta.mensaje = "Propuesta aceptada correctamente.";
+                    }
+                    else if (resultado == 2)
+                    {
+                        respuesta.mensaje = "Este usuario ya acepto la propuesta.";
+                    }
+                    else if (resultado == -1)
+                    {
+                        respuesta.mensaje = "Límite de inversionistas alcanzado.";
+                    }
+
+                    else
+                    {
+                        respuesta.mensaje = "Error al aceptar propuesta.";
+                    }
+                }
+            }
+
+            return respuesta;
+        }
+
+
 
 
         // Método para actualizar usuario
@@ -151,11 +251,13 @@ namespace InvestWiseProyecto.DataConnection
 
                     // Agregar parámetros de entrada
                     command.Parameters.Add(new SqlParameter("@idProducto", SqlDbType.Int)).Value = propuestaModi.idProducto;
-                    command.Parameters.Add(new SqlParameter("@idEstadoPropuesta", SqlDbType.Int)).Value = propuestaModi.idEstadoPropuesta;
+                    //command.Parameters.Add(new SqlParameter("@idEstadoPropuesta", SqlDbType.Int)).Value = propuestaModi.idEstadoPropuesta;
                     command.Parameters.Add(new SqlParameter("@numInversionistasPropuesta", SqlDbType.Int)).Value = propuestaModi.numInversionistasPropuesta;
                     command.Parameters.Add(new SqlParameter("@presupuestoGastoPropuesta", SqlDbType.Float)).Value = propuestaModi.presupuestoGastoPropuesta;
-                    command.Parameters.Add(new SqlParameter("@fechaFinPropuesta", SqlDbType.DateTime)).Value = propuestaModi.fechaFinPropuesta;
-                    command.Parameters.Add(new SqlParameter("@estaAprobado", SqlDbType.Bit)).Value = propuestaModi.estaAprobado;
+                    command.Parameters.Add(new SqlParameter("@valorTotalPropuesta", SqlDbType.Float, 5)).Value = propuestaModi.valorTotalPropuesta;
+                    command.Parameters.Add(new SqlParameter("@precioVentaPropuesta", SqlDbType.Float, 5)).Value = propuestaModi.precioVentaPropuesta;
+                    command.Parameters.Add(new SqlParameter("@fechaInicioPropuesta", SqlDbType.VarChar, 8)).Value = propuestaModi.fechaInicioPropuesta;
+                    command.Parameters.Add(new SqlParameter("@gananciaPropuesta", SqlDbType.Float, 5)).Value = propuestaModi.gananciaPropuesta;
                     // Agregar parámetro de salida
                     SqlParameter outputParameter = new SqlParameter("@resultado", SqlDbType.Int)
                     {
@@ -211,6 +313,54 @@ namespace InvestWiseProyecto.DataConnection
 
             return respuesta;
         }
+
+        public Respuesta SalirPropuesta(AceptarPropuesta usuarioPropuesta)
+        {
+            Respuesta respuesta = new Respuesta();
+
+            using (SqlConnection connection = new SqlConnection(cadena))
+            {
+                using (SqlCommand command = new SqlCommand("sp_SalirPropuesta", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Parámetros de entrada
+                    command.Parameters.Add(new SqlParameter("@idUsuario", usuarioPropuesta.IdUsuario));
+                    command.Parameters.Add(new SqlParameter("@idPropuesta", usuarioPropuesta.IdPropuesta));
+
+                    // Parámetro de salida
+                    SqlParameter outputResultado = new SqlParameter("@resultado", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    command.Parameters.Add(outputResultado);
+
+                    // Ejecutar el procedimiento
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    // Obtener el valor del parámetro de salida
+                    int resultado = (int)outputResultado.Value;
+                    respuesta.codigo = resultado;
+
+                    if (resultado == 1)
+                    {
+                        respuesta.mensaje = "Usuario eliminado de la propuesta correctamente.";
+                    }
+                    else if (resultado == 0)
+                    {
+                        respuesta.mensaje = "Usuario no está asociado a esta propuesta.";
+                    }
+                    else
+                    {
+                        respuesta.mensaje = "Error al intentar eliminar al usuario de la propuesta.";
+                    }
+                }
+            }
+
+            return respuesta;
+        }
+
 
 
         //Convertimos la tabla
