@@ -7,32 +7,32 @@
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:service\\reporteporcgananporususervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\service\\reporteporcgananciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:service\\reporteporcgananciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\reportes\\productorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\reportes\\productorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\reportes\\usuproprporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\reportes\\usuproprporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\reportes\\usuariorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\reportes\\usuariorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\reportes\\propuestarporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\reportes\\propuestarporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\reportes\\productorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\reportes\\productorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\service\\reporteporcgananciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:service\\reporteporcgananciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\dataconnection\\reporteporcgananciaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:dataconnection\\reporteporcgananciaconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\model\\reportes\\usuariorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|solutionrelative:model\\reportes\\usuariorporcganan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A377C6A-C975-4123-A382-C0E5CDBBA326}|InvestWiseProyecto.csproj|c:\\users\\kriss\\source\\repos\\investwiseproyecto\\controllers\\propuestacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -156,7 +156,7 @@
               "RelativeDocumentMoniker": "Service\\ReportePorcGananPorUsuService.cs",
               "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Service\\ReportePorcGananPorUsuService.cs",
               "RelativeToolTip": "Service\\ReportePorcGananPorUsuService.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAgwJsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T00:46:35.901Z",
               "EditorCaption": ""
@@ -169,27 +169,14 @@
               "RelativeDocumentMoniker": "Model\\Reportes\\PropuestaRPorcGanan.cs",
               "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Reportes\\PropuestaRPorcGanan.cs",
               "RelativeToolTip": "Model\\Reportes\\PropuestaRPorcGanan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T21:55:51.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuPropRPorcGanan.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Reportes\\UsuPropRPorcGanan.cs",
-              "RelativeDocumentMoniker": "Model\\Reportes\\UsuPropRPorcGanan.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Reportes\\UsuPropRPorcGanan.cs",
-              "RelativeToolTip": "Model\\Reportes\\UsuPropRPorcGanan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T21:56:20.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ProductoRPorcGanan.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Reportes\\ProductoRPorcGanan.cs",
               "RelativeDocumentMoniker": "Model\\Reportes\\ProductoRPorcGanan.cs",
@@ -203,32 +190,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReportePorcGananciaService.cs",
-              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Service\\ReportePorcGananciaService.cs",
-              "RelativeDocumentMoniker": "Service\\ReportePorcGananciaService.cs",
-              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Service\\ReportePorcGananciaService.cs",
-              "RelativeToolTip": "Service\\ReportePorcGananciaService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAC0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T21:52:13.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "ReportesController.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\ReportesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportesController.cs",
               "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Controllers\\ReportesController.cs",
               "RelativeToolTip": "Controllers\\ReportesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T05:50:38.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ReportePorcGananciaConnection.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\DataConnection\\ReportePorcGananciaConnection.cs",
               "RelativeDocumentMoniker": "DataConnection\\ReportePorcGananciaConnection.cs",
@@ -241,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "UsuarioRPorcGanan.cs",
               "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Reportes\\UsuarioRPorcGanan.cs",
               "RelativeDocumentMoniker": "Model\\Reportes\\UsuarioRPorcGanan.cs",
@@ -251,6 +225,31 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T21:53:55.928Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuPropRPorcGanan.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Reportes\\UsuPropRPorcGanan.cs",
+              "RelativeDocumentMoniker": "Model\\Reportes\\UsuPropRPorcGanan.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Model\\Reportes\\UsuPropRPorcGanan.cs",
+              "RelativeToolTip": "Model\\Reportes\\UsuPropRPorcGanan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T21:56:20.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReportePorcGananciaService.cs",
+              "DocumentMoniker": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Service\\ReportePorcGananciaService.cs",
+              "RelativeDocumentMoniker": "Service\\ReportePorcGananciaService.cs",
+              "ToolTip": "C:\\Users\\kriss\\source\\repos\\InvestWiseProyecto\\Service\\ReportePorcGananciaService.cs",
+              "RelativeToolTip": "Service\\ReportePorcGananciaService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAC0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T21:52:13.872Z"
             },
             {
               "$type": "Document",

@@ -27,40 +27,89 @@ namespace InvestWiseProyecto.Service
                 return new List<object>(); // Retorna vacío si no hay usuario
             }
 
-            // Realizar el reporte con LINQ
-            var reporte = (from up in usuariosPropuestas
-                           join p in propuestas on up.IdPropuesta equals p.IdPropuesta
-                           join prod in productos on p.IdProducto equals prod.IdProducto
-                           where up.IdUsuario == idUsuario && !p.EstaAprobado // Condiciones
-                           let ingresoPorUsuario = (p.PrecioVentaPropuesta - p.ValorTotalPropuesta) /
-                                                   usuariosPropuestas.Count(x => x.IdPropuesta == p.IdPropuesta)
-                           let porcentajeGananciaFinal = (ingresoPorUsuario / up.MontoInversion) * 100
-                           let fechaInicio = ConvertirFechaYYYYMMDD(p.FechaInicioPropuesta)
-                           let fechaAceptacion = ConvertirFechaYYYYMMDD(up.FechaAceptacion)
-                           let rotacionDias = (fechaInicio.HasValue && fechaAceptacion.HasValue) ?
-                                              (int?)(fechaAceptacion.Value - fechaInicio.Value).TotalDays : null
+            var reporte = new List<object>();
 
-                           let rentabilidadPorDia = rotacionDias.HasValue && rotacionDias > 0 ?
-                                                    porcentajeGananciaFinal / rotacionDias.Value : 0
-                           let analisisRentabilidad = rentabilidadPorDia!=0
-                               ? (rentabilidadPorDia > 5 ? "Alta rentabilidad, buena inversión" :
-                                  porcentajeGananciaFinal == 100 ? "Recuperaste lo invertido. Considera nuevas oportunidades." :
-                                  "Baja rentabilidad, reconsiderar inversión")
-                               : "Datos insuficientes para análisis"
-                           select new
-                           {
-                               Producto = prod.NombreProducto,
-                               InversionTotalPropuesta = p.ValorTotalPropuesta,
-                               PrecioDeVenta = p.PrecioVentaPropuesta,
-                               Participantes = p.NumInversionistasPropuesta,
-                               InversionIndividual = up.MontoInversion,
-                               IngresoPropuestaPorUsuario = ingresoPorUsuario,
-                               PorcentajeGananciaFinal = porcentajeGananciaFinal,
-                               ObjPorcGananciaIndiv = usuarioFiltrado.ObjPorcPropUsuario,
-                               RotacionDias = rotacionDias,
-                               RentabilidadPorDia = rentabilidadPorDia,
-                               AnalisisRentabilidad = analisisRentabilidad
-                           }).ToList<object>();
+            // Primera iteración: recorrer propuestas
+            foreach (var propuesta in propuestas)
+            {
+                // Ignorar propuestas aprobadas
+                if (propuesta.EstaAprobado) continue;
+
+                // Segunda iteración: filtrar propuestas específicas del usuario
+                var propuestasUsuario = new List<UsuPropRPorcGanan>();
+                foreach (var up in usuariosPropuestas)
+                {
+                    if (up.IdUsuario == idUsuario && up.IdPropuesta == propuesta.IdPropuesta)
+                    {
+                        propuestasUsuario.Add(up);
+                    }
+                }
+
+                if (!propuestasUsuario.Any()) continue;
+
+                // Tercera iteración: recorrer las propuestas específicas del usuario
+                foreach (var up in propuestasUsuario)
+                {
+                    // Cuarta iteración: buscar producto relacionado
+                    ProductoRPorcGanan productoRelacionado = null;
+                    foreach (var producto in productos)
+                    {
+                        if (producto.IdProducto == propuesta.IdProducto)
+                        {
+                            productoRelacionado = producto;
+                            break;
+                        }
+                    }
+
+                    if (productoRelacionado == null) continue;
+
+                    // Calcular ingreso por usuario
+                    int numParticipantes = usuariosPropuestas.Count(x => x.IdPropuesta == propuesta.IdPropuesta);
+                    float ingresoPorUsuario = (propuesta.PrecioVentaPropuesta - propuesta.ValorTotalPropuesta) / numParticipantes;
+
+                    // Calcular porcentaje de ganancia final
+                    float porcentajeGananciaFinal = (ingresoPorUsuario / up.MontoInversion) * 100;
+
+                    // Convertir fechas
+                    var fechaInicio = ConvertirFechaYYYYMMDD(propuesta.FechaInicioPropuesta);
+                    var fechaAceptacion = ConvertirFechaYYYYMMDD(up.FechaAceptacion);
+
+                    // Calcular rotación de días
+                    int? rotacionDias = (fechaInicio.HasValue && fechaAceptacion.HasValue)
+                        ? (int?)(fechaAceptacion.Value - fechaInicio.Value).TotalDays
+                        : null;
+
+                    // Calcular rentabilidad por día
+                    float rentabilidadPorDia = rotacionDias.HasValue && rotacionDias > 0
+                        ? porcentajeGananciaFinal / rotacionDias.Value
+                        : 0;
+
+                    // Analizar rentabilidad
+                    string analisisRentabilidad = rentabilidadPorDia != 0
+                        ? (rentabilidadPorDia > 5
+                            ? "Alta rentabilidad, buena inversión"
+                            : porcentajeGananciaFinal == 100
+                                ? "Recuperaste lo invertido. Considera nuevas oportunidades."
+                                : "Baja rentabilidad, reconsiderar inversión")
+                        : "Datos insuficientes para análisis";
+
+                    // Agregar al reporte
+                    reporte.Add(new
+                    {
+                        Producto = productoRelacionado.NombreProducto,
+                        InversionTotalPropuesta = propuesta.ValorTotalPropuesta,
+                        PrecioDeVenta = propuesta.PrecioVentaPropuesta,
+                        Participantes = numParticipantes,
+                        InversionIndividual = up.MontoInversion,
+                        IngresoPropuestaPorUsuario = ingresoPorUsuario,
+                        PorcentajeGananciaFinal = porcentajeGananciaFinal,
+                        ObjPorcGananciaIndiv = usuarioFiltrado.ObjPorcPropUsuario,
+                        RotacionDias = rotacionDias,
+                        RentabilidadPorDia = rentabilidadPorDia,
+                        AnalisisRentabilidad = analisisRentabilidad
+                    });
+                }
+            }
 
             return reporte;
         }
@@ -201,29 +250,7 @@ namespace InvestWiseProyecto.Service
         }
 
 
-        //private int CalcularEdadDesdeFormatoYYYYMMDD(string fechaNacimiento)
-        //{
-        //    if (DateTime.TryParseExact(fechaNacimiento, "yyyyMMdd",
-        //                               System.Globalization.CultureInfo.InvariantCulture,
-        //                               System.Globalization.DateTimeStyles.None,
-        //                               out DateTime fechaNacimientoDate))
-        //    {
-        //        var today = DateTime.Today;
-        //        int edad = today.Year - fechaNacimientoDate.Year;
-
-        //        // Ajustar la edad si el cumpleaños aún no ha ocurrido este año
-        //        if (fechaNacimientoDate > today.AddYears(-edad))
-        //        {
-        //            edad--;
-        //        }
-
-        //        return edad;
-        //    }
-        //    else
-        //    {
-        //        throw new FormatException("La fecha de nacimiento no tiene el formato esperado (yyyyMMdd).");
-        //    }
-        //}
+       
 
     }
 }
