@@ -15,6 +15,8 @@ namespace InvestWiseProyecto.DataConnection
             int resultado;
             Respuesta respuesta = new Respuesta();
 
+
+
             using (SqlConnection connection = new SqlConnection(cadena))
             {
                 using (SqlCommand command = new SqlCommand("sp_InsertarPropuesta", connection))

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvestWiseProyecto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3968aef4db481bed950a25386b74a41846ab26b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b852604a92c771028d24b19eb4ed4a9a603d0ec0")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvestWiseProyecto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvestWiseProyecto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

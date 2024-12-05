@@ -3,6 +3,7 @@ using InvestWiseProyecto.Model;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 namespace InvestWiseProyecto.Data
 {
     public class UsuarioConection
@@ -14,6 +15,14 @@ namespace InvestWiseProyecto.Data
         {
             int resultado;
             Respuesta respuesta = new Respuesta();
+
+            // Validar formato de correo electrónico
+            if (!EsCorreoValido(usuario.correoUsuario))
+            {
+                respuesta.codigo = -1;
+                respuesta.mensaje = "El correo electrónico tiene un formato inválido.";
+                return respuesta;
+            }
 
             using (SqlConnection connection = new SqlConnection(cadena))
             {
@@ -306,6 +315,13 @@ namespace InvestWiseProyecto.Data
             }
 
             return list;
+        }
+
+        private bool EsCorreoValido(string correo)
+        {
+            // Expresión regular para validar correos
+            string patronCorreo = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(correo, patronCorreo);
         }
 
 

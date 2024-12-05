@@ -3,10 +3,10 @@
     public class CadenaConexion
     {
         //private static string servidor = @"camilacabrera.database.windows.net";
-        private static string servidor = @"host.docker.internal\SQLEXPRESS";
+        private static string servidor = @"investwiseserver.database.windows.net";
         private static string base_tip = "InvestWise";
-        private static string usuario = "sa";
-        private static string password = "2003";
+        private static string usuario = "userWise12";
+        private static string password = "1q@2w@3e@";
         //private static string usuario = "sa";
         //private static string password = "sasa";
         public static string RetornaCadenaConexion()

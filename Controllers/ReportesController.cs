@@ -29,5 +29,19 @@ namespace InvestWiseProyecto.Controllers
             return Ok(resultado);
         }
 
+        [HttpGet("ReportePorcentajeGananciaPorUsuarioYCategoria/{idUsuario}/{idCategoria}")]
+        public IActionResult ReporteProdXCateRentablePorUsuService(int idUsuario, int idCategoria)
+        {
+            var reporteService = new ReporteProdXCateRentablePorUsuService();
+            var resultado = reporteService.GenerarReportePorUsuarioPorCategoria(idUsuario, idCategoria);
+            if (resultado.Count == 0)
+            {
+                return NotFound(new { mensaje = "No se encontraron datos para la categoría y usuario especificados." });
+            }
+            return Ok(resultado);
+        }
+
+
+
     }
 }
